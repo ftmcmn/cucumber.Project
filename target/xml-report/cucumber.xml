@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="6" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="0.515">
+    <testcase classname="US03 Registration sayfasında guclu sifre girilmeli ve &quot;Password strength&quot; seviyeleri gorulebilmelidir." name="TC01 Daha guclu sifre icin en az 1 kucuk harf olmali ve &quot;Password strength&quot; seviyesinin degistigi gorulebilmelidir." time="0.078">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................undefined
+When Kullanici sayfada sag ustte bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..skipped
+And Acilan kutucukta register secenegini tiklanir...........................skipped
+And Acilanin Register sayfasi oldugu dogrulanir.............................skipped
+And PassWord bolumune alti tane buyuk harf girdikten sonra bir tane kucuk harf girilir..skipped
+Then "Password streght" renk seviyesini degistigi test edilir...............skipped
+And Sayfa kapatilir.........................................................skipped
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US03 Registration sayfasında guclu sifre girilmeli ve &quot;Password strength&quot; seviyeleri gorulebilmelidir." name="TC02 Sifre en az 1 buyuk harf icermeli ve  &quot;Password strength&quot; seviyesinin degistigi gorulebilmelidir." time="0.015">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................undefined
+When Kullanici sayfada sag ustte bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..skipped
+And Acilan kutucukta register secenegini tiklanir...........................skipped
+And Acilanin Register sayfasi oldugu dogrulanir.............................skipped
+And PassWord bolumune alti tane kucuk harf girdikten sonra bir tane buyuk harf girilir..skipped
+Then Password strenght seviyesinin degistigi test edilir....................skipped
+And Sayfa kapatilir.........................................................skipped
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US03 Registration sayfasında guclu sifre girilmeli ve &quot;Password strength&quot; seviyeleri gorulebilmelidir." name="TC03 Sifre en az 1 rakam icermeli ve &quot;Password strength&quot; seviyesinin degistigi gorulebilmelidir." time="0.015">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................undefined
+When Kullanici sayfada sag ustte bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..skipped
+And Acilan kutucukta register secenegini tiklanir...........................skipped
+And Acilanin Register sayfasi oldugu dogrulanir.............................skipped
+Then PassWord bolumune alti tane kucuk harf girdikten sonra bir tane buyuk harf girilir..skipped
+And Password strenght seviyesinin degistigi test edilir.....................skipped
+And Sayfa kapatilir.........................................................skipped
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US03 Registration sayfasında guclu sifre girilmeli ve &quot;Password strength&quot; seviyeleri gorulebilmelidir." name="TC04 Sifre en az 1 ozel karakter icermeli ve&quot;Password strength&quot; seviyesinin degistigi gorulebilmelidir." time="0">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................undefined
+When Kullanici sayfada sag ustte bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..skipped
+And Acilan kutucukta register secenegini tiklanir...........................skipped
+And Acilanin Register sayfasi oldugu dogrulanir.............................skipped
+Then PassWord bolumune alti tane buyuk harf girdikten sonra bir tane ozel karakter girilir..skipped
+And Password strenght seviyesinin degistigi test edilir.....................skipped
+And Sayfa kapatilir.........................................................skipped
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US03 Registration sayfasında guclu sifre girilmeli ve &quot;Password strength&quot; seviyeleri gorulebilmelidir." name="TC05 Guclu bir parola için sifre en az 7 karakterden olusmalıdır." time="0">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................undefined
+When Kullanici sayfada sag ustte bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..skipped
+And Acilan kutucukta register secenegini tiklanir...........................skipped
+And Acilanin Register sayfasi oldugu dogrulanir.............................skipped
+And Register sayfasinda bulunan Password kismina 7 karakterden az rakam,ozel karakter ve harf girilir..skipped
+Then "Password streght" renk seviyesini degismedigi test edilir.............skipped
+And Sayfa kapatilir.........................................................skipped
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US03 Registration sayfasında guclu sifre girilmeli ve &quot;Password strength&quot; seviyeleri gorulebilmelidir." name="TC06 Guclu bir parola için sifre en az 7 karakterden olusmalıdır." time="0">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................undefined
+When Kullanici sayfada sag ustte bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..skipped
+And Acilan kutucukta register secenegini tiklanir...........................skipped
+And Acilanin Register sayfasi oldugu dogrulanir.............................skipped
+And Buyuk, kucuk harf, rakam, ozel 6 karakter girilir.......................skipped
+Then Yedinci harf girilince guclu bir sifre olustugu test edilir............skipped
+And Sayfa kapatilir.........................................................skipped
+]]>
+        </failure>
+    </testcase>
+</testsuite>
