@@ -10,7 +10,7 @@ Feature: US03 Registration sayfasında guclu sifre girilmeli ve "Password streng
   Scenario:TC01 Daha guclu sifre icin en az 1 kucuk harf olmali ve "Password strength" seviyesinin degistigi gorulebilmelidir.
 
     And PassWord bolumune alti tane buyuk harf girdikten sonra bir tane kucuk harf girilir.
-    Then "Password streght" renk seviyesini degistigi test edilir.
+    Then Password strenght renk seviyesini degistigi test edilir.
     And Sayfa kapatilir.
 
   Scenario: TC02 Sifre en az 1 buyuk harf icermeli ve  "Password strength" seviyesinin degistigi gorulebilmelidir.
@@ -32,7 +32,7 @@ Feature: US03 Registration sayfasında guclu sifre girilmeli ve "Password streng
 
   Scenario: TC05 Guclu bir parola için sifre en az 7 karakterden olusmalıdır.
     And Register sayfasinda bulunan Password kismina 7 karakterden az rakam,ozel karakter ve harf girilir.
-    Then "Password streght" renk seviyesini degismedigi test edilir.
+    Then Password strenght renk seviyesini degismedigi test edilir.
     And  Sayfa kapatilir.
 
   Scenario: TC06 Guclu bir parola için sifre en az 7 karakterden olusmalıdır.
