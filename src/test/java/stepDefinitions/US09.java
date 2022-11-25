@@ -19,15 +19,6 @@ public class US09 {
     Faker faker = new Faker();
 
 
-    @And("sayfa {int} saniye bekletilir.")
-    public void sayfaSaniyeBekletilir(int saniye) {
-        try {
-            Thread.sleep(saniye * 1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
 
     @Given("Belirtilen url'e gidilir.")
     public void belirtilenUrlEGidilir() {
@@ -41,60 +32,60 @@ public class US09 {
 
     @And("Sign in'e tiklanir.")
     public void signInETiklanir() {
-        medunnaPages.logSignin.click();
+        medunnaPages.logSignin9.click();
     }
 
     @And("Personel username girilir.")
     public void personelUsernameGirilir() {
-        medunnaPages.signinUsername.sendKeys(ConfigReader.getProperty("staffUsername"));
+        medunnaPages.signinUsername9.sendKeys(ConfigReader.getProperty("staffUsername"));
     }
 
     @And("Personel password girilir.")
     public void personelPasswordGirilir() {
-        medunnaPages.signinPassword.sendKeys(ConfigReader.getProperty("staffPassword"));
+        medunnaPages.signinPassword9.sendKeys(ConfigReader.getProperty("staffPassword"));
     }
 
     @And("Sign in butonuna tiklanir.")
     public void signInButonunaTiklanir() {
-        medunnaPages.signInButton.click();
+        medunnaPages.signInButton9.click();
     }
 
     @And("My pages'a tiklanir.")
     public void myPagesATiklanir() {
-        medunnaPages.dropDownMyPages.click();
+        medunnaPages.dropDownMyPages9.click();
     }
 
     @And("Search patient'e tiklanir.")
     public void searchPatientETiklanir() {
-        medunnaPages.dropDownMyPagesSearchPatient.click();
+        medunnaPages.dropDownMyPagesSearchPatient9.click();
     }
 
     @And("Patient ssn box'a ssn girilir.")
     public void patientSsnBoxASsnGirilir() {
-        medunnaPages.patientSSNBox.sendKeys(ConfigReader.getProperty("hastaSSN"));
+        medunnaPages.patientSSNBox9.sendKeys(ConfigReader.getProperty("hastaSSN"));
     }
 
     @And("View'e tiklanir.")
     public void viewETiklanir() {
 
-        medunnaPages.patientView.click();
+        medunnaPages.patientView9.click();
 
     }
 
     @Then("Hasta bilgilerinin goruldugu test edilir.")
     public void hastaBilgilerininGorulduguTestEdilir() {
-        Assert.assertTrue(medunnaPages.patientViewTrue.isDisplayed());
+        Assert.assertTrue(medunnaPages.patientViewTrue9.isDisplayed());
     }
 
     @And("Edit butonuna tiklanir.")
     public void editButonunaTiklanir() {
-        medunnaPages.patientEdit.click();
+        medunnaPages.patientEdit9.click();
     }
 
     @And("firstname lastname birthdate email phone gender blood group address description user country and state city bilgileri duzenlenir.")
     public void firstnameLastnameBirthdateEmailPhoneGenderBloodGroupAddressDescriptionUserCountryAndStateCityBilgileriDuzenlenir() throws InterruptedException {
 
-        medunnaPages.patientEditFirstname.clear();
+        medunnaPages.patientEditFirstname9.clear();
        /* actions.click(medunnaPages.patientEditFirstname).sendKeys(faker.name().firstName()).sendKeys(Keys.TAB)
                 .sendKeys(faker.name().lastName()).sendKeys(Keys.TAB).sendKeys("25").sendKeys(Keys.TAB)
                 .sendKeys(faker.internet().emailAddress()).sendKeys(Keys.TAB)
@@ -103,13 +94,13 @@ public class US09 {
                 .sendKeys(faker.lorem().characters(10)).sendKeys(Keys.TAB)
                 .click().sendKeys("s").sendKeys(Keys.TAB).sendKeys("a")
                 .sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();*/
-        actions.click(medunnaPages.patientEditFirstname).sendKeys(faker.name().firstName()).sendKeys(Keys.TAB)
-                .sendKeys(faker.name().lastName()).sendKeys(Keys.TAB).sendKeys("20").perform();
+        actions.click(medunnaPages.patientEditFirstname9).sendKeys(faker.name().firstName()).sendKeys(Keys.TAB)
+                .sendKeys(faker.name().lastName()).perform();
         Thread.sleep(2000);
-        medunnaPages.patientEditEmail.clear();
-        medunnaPages.patientEditEmail.sendKeys(faker.internet().emailAddress());
-        medunnaPages.patientEditPhone.clear();
-        medunnaPages.patientEditPhone.sendKeys("2589631265");
+        medunnaPages.patientEditEmail9.clear();
+        medunnaPages.patientEditEmail9.sendKeys(faker.internet().emailAddress());
+        medunnaPages.patientEditPhone9.clear();
+        medunnaPages.patientEditPhone9.sendKeys("2589631265");
         actions.sendKeys(Keys.TAB).
                 sendKeys("F").sendKeys(Keys.TAB).sendKeys("b").sendKeys(Keys.TAB)
                 .sendKeys(faker.lorem().characters(10)).sendKeys(Keys.TAB)
@@ -120,36 +111,41 @@ public class US09 {
     }
 
     @And("Save butonuna tiklanir.")
-    public void saveButonunaTiklanir() {
-        actions.click(medunnaPages.patientEditSave);
+    public void saveButonunaTiklanir() throws InterruptedException {
+        actions.click(medunnaPages.patientEditSave9);
+        Thread.sleep(2000);
     }
 
     @Then("firstname lastname birthdate email phone gender blood group address description user country and state city bilgilerin düzenlenebildigi test edilir.")
-    public void firstnameLastnameBirthdateEmailPhoneGenderBloodGroupAddressDescriptionUserCountryAndStateCityBilgilerinDuzenlenebildigiTestEdilir() {
-        Assert.assertTrue(medunnaPages.patientEditSaveBasarili.isDisplayed());
+    public void firstnameLastnameBirthdateEmailPhoneGenderBloodGroupAddressDescriptionUserCountryAndStateCityBilgilerinDuzenlenebildigiTestEdilir() throws InterruptedException {
+        Thread.sleep(2000);
+       Assert.assertTrue(medunnaPages.patientEditSaveBasarili9.isDisplayed());
     }
 
     @And("Ssn girilerek aranabildiği test edilir.")
-    public void ssnGirilerekAranabildigiTestEdilir() {
-        medunnaPages.patientSSNBox.sendKeys(ConfigReader.getProperty("hastaSSN"));
+    public void ssnGirilerekAranabildigiTestEdilir() throws InterruptedException {
+        Thread.sleep(2000);
+        medunnaPages.patientSSNBox9.sendKeys(ConfigReader.getProperty("hastaSSN"));
 
     }
 
     @And("Show Appointments'e tiklanir.")
-    public void showAppointmentsETiklanir() {
-
-        medunnaPages.patientShowAppointments.click();
+    public void showAppointmentsETiklanir() throws InterruptedException {
+        Thread.sleep(3000);
+        medunnaPages.patientShowAppointments9.click();
 
     }
 
     @Then("Tum kayit bilgilerinin dolduruldugu test edilir.")
-    public void tumKayitBilgilerininDoldurulduguTestEdilir() {
-        Assert.assertTrue(medunnaPages.patientShowAppointmentsTrue.isDisplayed());
+    public void tumKayitBilgilerininDoldurulduguTestEdilir() throws InterruptedException {
+        Thread.sleep(2000);
+        Assert.assertTrue(medunnaPages.patientShowAppointmentsTrue9.isDisplayed());
 
     }
 
     @And("Sayfa kapatilir.")
-    public void sayfaKapatilir() {
+    public void sayfaKapatilir() throws InterruptedException {
+        Thread.sleep(2000);
         Driver.closeDriver();
     }
 }

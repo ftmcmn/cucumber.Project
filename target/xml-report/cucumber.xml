@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.202">
+    <testcase classname="US09 &quot;Staff (Personel),hasta bilgilerini görebilmeli, düzenleyebilmeli ama silememelidir.&quot;" name="TC03 Kullanıcı, SSN'lerine göre yeni bir başvuru sahibi arayabilmeli ve tüm kayıt bilgilerinin doldurulduğunu görebilmelidir." time="24.843">
+        <system-out>
+            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
+When Giris icon'una tiklanir................................................passed
+And Sign in'e tiklanir......................................................passed
+And Personel username girilir...............................................passed
+And Personel password girilir...............................................passed
+And Sign in butonuna tiklanir...............................................passed
+And My pages'a tiklanir.....................................................passed
+And Search patient'e tiklanir...............................................passed
+And Ssn girilerek aranabildiği test edilir..................................passed
+And Show Appointments'e tiklanir............................................passed
+Then Tum kayit bilgilerinin dolduruldugu test edilir........................passed
+And Sayfa kapatilir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
