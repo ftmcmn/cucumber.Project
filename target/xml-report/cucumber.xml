@@ -1,18 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.202">
-    <testcase classname="US09 &quot;Staff (Personel),hasta bilgilerini görebilmeli, düzenleyebilmeli ama silememelidir.&quot;" name="TC03 Kullanıcı, SSN'lerine göre yeni bir başvuru sahibi arayabilmeli ve tüm kayıt bilgilerinin doldurulduğunu görebilmelidir." time="24.843">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="153.395">
+    <testcase classname="US15" name="TC01" time="25.799">
         <system-out>
             <![CDATA[Given Belirtilen url'e gidilir..............................................passed
 When Giris icon'una tiklanir................................................passed
 And Sign in'e tiklanir......................................................passed
-And Personel username girilir...............................................passed
-And Personel password girilir...............................................passed
+And Yonetici username girilir FC............................................passed
+And Yonetici password girilir FC............................................passed
 And Sign in butonuna tiklanir...............................................passed
-And My pages'a tiklanir.....................................................passed
-And Search patient'e tiklanir...............................................passed
-And Ssn girilerek aranabildiği test edilir..................................passed
-And Show Appointments'e tiklanir............................................passed
-Then Tum kayit bilgilerinin dolduruldugu test edilir........................passed
+And Items&Titles'a tiklanir FC..............................................passed
+And Patient'e tiklanir FC...................................................passed
+And Create a new patient'e tiklanir FC......................................passed
+Then Create or edit a Patient yazisinin goruldugu test edilir FC............passed
+And Sayfa kapatilir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US15" name="TC02" time="23.185">
+        <system-out>
+            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
+When Giris icon'una tiklanir................................................passed
+And Sign in'e tiklanir......................................................passed
+And Yonetici username girilir FC............................................passed
+And Yonetici password girilir FC............................................passed
+And Sign in butonuna tiklanir...............................................passed
+And Items&Titles'a tiklanir FC..............................................passed
+And Patient'e tiklanir FC...................................................passed
+Then SSN, First Name, Last Name, Birth Date, Phone, Gender, Blood Group, Address,Description, Created Date, User, Country and state City gibi hasta bilgilerinin goruldugu test edilir FC..passed
+And Sayfa kapatilir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US15" name="TC03" time="36.841">
+        <system-out>
+            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
+When Giris icon'una tiklanir................................................passed
+And Sign in'e tiklanir......................................................passed
+And Yonetici username girilir FC............................................passed
+And Yonetici password girilir FC............................................passed
+And Sign in butonuna tiklanir...............................................passed
+And Items&Titles'a tiklanir FC..............................................passed
+And Patient'e tiklanir FC...................................................passed
+And Create a new patient'e tiklanir FC......................................passed
+And Istenen hasta bilgileri girilir FC......................................passed
+And Save butonuna tıklanır FC...............................................passed
+Then Hasta oluturuldu yazinin görundugu test edilir FC......................passed
+And Sayfa kapatilir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US15" name="TC04" time="25.392">
+        <system-out>
+            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
+When Giris icon'una tiklanir................................................passed
+And Sign in'e tiklanir......................................................passed
+And Yonetici username girilir FC............................................passed
+And Yonetici password girilir FC............................................passed
+And Sign in butonuna tiklanir...............................................passed
+And Items&Titles'a tiklanir FC..............................................passed
+And Patient'e tiklanir FC...................................................passed
+And Edit'e tiklanir FC......................................................passed
+And Hasta bilgileri guncellenir FC..........................................passed
+And Save butonuna tıklanır FC...............................................passed
+Then Hastanin güncellendigi yazinin görundugu test edilir FC................passed
+And Sayfa kapatilir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US15" name="TC06" time="17.617">
+        <system-out>
+            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
+When Giris icon'una tiklanir................................................passed
+And Sign in'e tiklanir......................................................passed
+And Yonetici username girilir FC............................................passed
+And Yonetici password girilir FC............................................passed
+And Sign in butonuna tiklanir...............................................passed
+And Items&Titles'a tiklanir FC..............................................passed
+And Patient'e tiklanir FC...................................................passed
+And Create a new patient'e tiklanir FC......................................passed
+Then Country ve Us state seceneklerinin oldugu test edilir FC...............passed
+And Sayfa kapatilir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US15" name="TC08" time="23.002">
+        <system-out>
+            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
+When Giris icon'una tiklanir................................................passed
+And Sign in'e tiklanir......................................................passed
+And Yonetici username girilir FC............................................passed
+And Yonetici password girilir FC............................................passed
+And Sign in butonuna tiklanir...............................................passed
+And Items&Titles'a tiklanir FC..............................................passed
+And Patient'e tiklanir FC...................................................passed
+And Delete'e tiklanir FC....................................................passed
+Then Hasta silindi yazisinin goruldugu test edilir FC.......................passed
 And Sayfa kapatilir.........................................................passed
 ]]>
         </system-out>

@@ -129,17 +129,10 @@ public class US09 {
 
     }
 
-    @And("Show Appointments'e tiklanir.")
-    public void showAppointmentsETiklanir() throws InterruptedException {
-        Thread.sleep(3000);
-        medunnaPages.patientShowAppointments9.click();
-
-    }
-
     @Then("Tum kayit bilgilerinin dolduruldugu test edilir.")
     public void tumKayitBilgilerininDoldurulduguTestEdilir() throws InterruptedException {
         Thread.sleep(2000);
-        Assert.assertTrue(medunnaPages.patientShowAppointmentsTrue9.isDisplayed());
+        Assert.assertTrue(medunnaPages.patientViewTrue9.isDisplayed());
 
     }
 

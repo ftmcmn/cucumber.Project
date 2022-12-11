@@ -30,7 +30,6 @@ Feature: US09 "Staff (Personel),hasta bilgilerini görebilmeli, düzenleyebilmel
 @TC03
   Scenario: TC03 Kullanıcı, SSN'lerine göre yeni bir başvuru sahibi arayabilmeli ve tüm kayıt bilgilerinin doldurulduğunu görebilmelidir.
     And Ssn girilerek aranabildiği test edilir.
-    And Show Appointments'e tiklanir.
     Then Tum kayit bilgilerinin dolduruldugu test edilir.
     And Sayfa kapatilir.
 
