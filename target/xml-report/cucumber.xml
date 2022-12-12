@@ -1,102 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="153.395">
-    <testcase classname="US15" name="TC01" time="25.799">
-        <system-out>
-            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
-When Giris icon'una tiklanir................................................passed
-And Sign in'e tiklanir......................................................passed
-And Yonetici username girilir FC............................................passed
-And Yonetici password girilir FC............................................passed
-And Sign in butonuna tiklanir...............................................passed
-And Items&Titles'a tiklanir FC..............................................passed
-And Patient'e tiklanir FC...................................................passed
-And Create a new patient'e tiklanir FC......................................passed
-Then Create or edit a Patient yazisinin goruldugu test edilir FC............passed
-And Sayfa kapatilir.........................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.822">
+    <testcase classname="Unknown" name="_2" time="1.299">
+        <failure message="Step [US{int} status kodunun 200 oldugu gorulur] is defined with 2 parameters at 'stepDefinitions.Api09.usStatusKodununOlduguGorulur(int,int)'.&#10;However, the gherkin step has 1 arguments:&#10; * 15&#10;Step text: US15 status kodunun 200 oldugu gorulur" type="io.cucumber.core.exception.CucumberException">
+            <![CDATA[Given US15 GET request gonderir.............................................passed
+And US15 status kodunun 200 oldugu gorulur..................................failed
+And US15 tum hasta bilgilerini API response ile alir........................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: Step [US{int} status kodunun 200 oldugu gorulur] is defined with 2 parameters at 'stepDefinitions.Api09.usStatusKodununOlduguGorulur(int,int)'.
+However, the gherkin step has 1 arguments:
+ * 15
+Step text: US15 status kodunun 200 oldugu gorulur
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
 ]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US15" name="TC02" time="23.185">
-        <system-out>
-            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
-When Giris icon'una tiklanir................................................passed
-And Sign in'e tiklanir......................................................passed
-And Yonetici username girilir FC............................................passed
-And Yonetici password girilir FC............................................passed
-And Sign in butonuna tiklanir...............................................passed
-And Items&Titles'a tiklanir FC..............................................passed
-And Patient'e tiklanir FC...................................................passed
-Then SSN, First Name, Last Name, Birth Date, Phone, Gender, Blood Group, Address,Description, Created Date, User, Country and state City gibi hasta bilgilerinin goruldugu test edilir FC..passed
-And Sayfa kapatilir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US15" name="TC03" time="36.841">
-        <system-out>
-            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
-When Giris icon'una tiklanir................................................passed
-And Sign in'e tiklanir......................................................passed
-And Yonetici username girilir FC............................................passed
-And Yonetici password girilir FC............................................passed
-And Sign in butonuna tiklanir...............................................passed
-And Items&Titles'a tiklanir FC..............................................passed
-And Patient'e tiklanir FC...................................................passed
-And Create a new patient'e tiklanir FC......................................passed
-And Istenen hasta bilgileri girilir FC......................................passed
-And Save butonuna tıklanır FC...............................................passed
-Then Hasta oluturuldu yazinin görundugu test edilir FC......................passed
-And Sayfa kapatilir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US15" name="TC04" time="25.392">
-        <system-out>
-            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
-When Giris icon'una tiklanir................................................passed
-And Sign in'e tiklanir......................................................passed
-And Yonetici username girilir FC............................................passed
-And Yonetici password girilir FC............................................passed
-And Sign in butonuna tiklanir...............................................passed
-And Items&Titles'a tiklanir FC..............................................passed
-And Patient'e tiklanir FC...................................................passed
-And Edit'e tiklanir FC......................................................passed
-And Hasta bilgileri guncellenir FC..........................................passed
-And Save butonuna tıklanır FC...............................................passed
-Then Hastanin güncellendigi yazinin görundugu test edilir FC................passed
-And Sayfa kapatilir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US15" name="TC06" time="17.617">
-        <system-out>
-            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
-When Giris icon'una tiklanir................................................passed
-And Sign in'e tiklanir......................................................passed
-And Yonetici username girilir FC............................................passed
-And Yonetici password girilir FC............................................passed
-And Sign in butonuna tiklanir...............................................passed
-And Items&Titles'a tiklanir FC..............................................passed
-And Patient'e tiklanir FC...................................................passed
-And Create a new patient'e tiklanir FC......................................passed
-Then Country ve Us state seceneklerinin oldugu test edilir FC...............passed
-And Sayfa kapatilir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US15" name="TC08" time="23.002">
-        <system-out>
-            <![CDATA[Given Belirtilen url'e gidilir..............................................passed
-When Giris icon'una tiklanir................................................passed
-And Sign in'e tiklanir......................................................passed
-And Yonetici username girilir FC............................................passed
-And Yonetici password girilir FC............................................passed
-And Sign in butonuna tiklanir...............................................passed
-And Items&Titles'a tiklanir FC..............................................passed
-And Patient'e tiklanir FC...................................................passed
-And Delete'e tiklanir FC....................................................passed
-Then Hasta silindi yazisinin goruldugu test edilir FC.......................passed
-And Sayfa kapatilir.........................................................passed
-]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

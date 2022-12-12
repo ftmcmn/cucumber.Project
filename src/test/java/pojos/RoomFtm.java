@@ -3,7 +3,7 @@ package pojos;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Room {
+public class RoomFtm {
 
     private String createdBy;
     private String createdDate;
@@ -14,7 +14,7 @@ public class Room {
     private boolean status;
     private Integer id;
 
-    public Room(String createdBy, String createdDate, String description, Double price, Integer roomNumber, String roomType, boolean status, Integer id) {
+    public RoomFtm(String createdBy, String createdDate, String description, Double price, Integer roomNumber, String roomType, boolean status, Integer id) {
         this.createdBy = createdBy;
         this.createdDate = createdDate;
         this.description = description;
@@ -25,7 +25,7 @@ public class Room {
         this.id = id;
     }
 
-    public Room() {
+    public RoomFtm() {
     }
 
     public String getCreatedBy() {

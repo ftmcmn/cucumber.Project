@@ -3,16 +3,11 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.internal.RequestSpecificationImpl;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.junit.Assert;
-import org.junit.runner.Request;
-import pojos.Room;
-import utilities.Token;
+import pojos.RoomFtm;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.requestSpecification;
 import static junit.framework.TestCase.assertEquals;
 import static utilities.Token.generateToken;
 
@@ -41,9 +36,9 @@ public class Api16 {
     @And("tum hasta bilgilerini API response ile alir FCm.")
     public void tumHastaBilgileriniAPIResponseIleAlirFCm() {
 
-        Room expectedData=new Room("team20","2022-12-05T15:55:39.102687Z","orman manzaralı",9000.00,3185,"TWIN",false,372491);
+        RoomFtm expectedData=new RoomFtm("team20","2022-12-05T15:55:39.102687Z","orman manzarali",9000.00,3185,"TWIN",false,372491);
 
-        Room actualData=response.as(Room.class);
+        RoomFtm actualData=response.as(RoomFtm.class);
 
         assertEquals(expectedData.getCreatedBy(),actualData.getCreatedBy());
         assertEquals(expectedData.getCreatedDate(),actualData.getCreatedDate());
